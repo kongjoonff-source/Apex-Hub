@@ -206,7 +206,7 @@ const SITE = {
    * ──────────────────────────────────────────────────────────────────── */
   footer: {
     owner: "운영자 닉네임",                 // ← 본인 닉네임으로 바꾸세요
-    contact: "디스코드 @yourname",          // ← 본인 디스코드 아이디로 바꾸세요
+    contact: "디스코드 @kongqn0423",          // ← 본인 디스코드 아이디로 바꾸세요
     copyright: "© 2026 APEX HUB. ALL RIGHTS RESERVED.",
     links: [
       { label: "이용 가이드",     href: "#guide" },
