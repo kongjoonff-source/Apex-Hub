@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# 관리자 패널은 검색엔진에 노출하지 않습니다
+Disallow: /admin.html
+Disallow: /_check/

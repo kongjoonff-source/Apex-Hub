@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>APEX HUB | 업계 최저가 디스코드 서버</title>
+<meta name="description" content="각종 게임 재화 · 난코 대전장 · OTT 판매. 업계 최저가, 24시간 즉시 거래. 지금 디스코드 서버로 입장하세요.">
+<meta name="theme-color" content="#04050a">
+<meta name="color-scheme" content="dark">
+
+<!-- 카카오톡 / 디스코드 등에 링크를 붙였을 때 보이는 미리보기 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="APEX HUB | 업계 최저가 디스코드 서버">
+<meta property="og:description" content="각종 게임 재화 · 난코 대전장 · OTT 판매. 업계 최저가, 24시간 즉시 거래.">
+<meta property="og:image" content="assets/images/banner.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+
+<!-- 한글 폰트 (Pretendard) + 숫자용 폰트 (Outfit) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- 스크롤 진행 바 -->
+<div id="progress"></div>
+
+<!-- ── 상단 내비게이션 ───────────────────────────────────────────────── -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__logo" href="#home" style="text-decoration:none">
+      <img data-brand-logo src="assets/images/logo.svg" alt="로고">
+      <span data-brand-name>APEX HUB</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#about">서버 소개</a>
+      <a href="#gallery">이미지</a>
+      <a href="#price">가격표</a>
+      <a href="#guide">이용 가이드</a>
+      <a href="#notice">공지</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn--primary nav__cta" data-invite href="#">서버 입장</a>
+  </div>
+</header>
+
+<!-- ── HERO ─────────────────────────────────────────────────────────── -->
+<section class="hero" id="home" data-hero>
+  <div class="wrap">
+    <img class="hero__logo" data-brand-logo src="assets/images/logo.svg" alt="서버 로고">
+
+    <h1 data-hero-title>APEX <em>HUB</em></h1>
+    <p class="hero__tag" data-hero-tag>업계 최저가 · 24시간 즉시 거래</p>
+    <p class="hero__desc" data-hero-desc></p>
+
+    <div class="hero__actions">
+      <a class="btn btn--primary btn--lg" data-invite href="#">💬 디스코드 서버 입장하기</a>
+      <a class="btn btn--ghost btn--lg" href="#price">💰 가격표 보기</a>
+    </div>
+
+    <div class="hero__meta" data-hero-meta></div>
+
+    <div class="hero__banner" data-hero-banner>
+      <img src="assets/images/banner.svg" alt="배너">
+    </div>
+
+    <div class="wrap" data-hero-widget style="margin-top:26px"></div>
+
+    <p class="scroll-hint">아래로 스크롤<span></span></p>
+  </div>
+</section>
+
+<!-- ── 통계 ─────────────────────────────────────────────────────────── -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="stats" data-stats></div>
+  </div>
+</section>
+
+<!-- ── 서버 소개 / 자랑거리 ──────────────────────────────────────────── -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head sec-head--center reveal">
+      <span class="eyebrow">WHY APEX HUB</span>
+      <h2 class="sec-title">왜 저희 서버를 선택해야 할까요?</h2>
+      <p class="sec-sub">가격 · 속도 · 안전성, 세 가지 모두 잡았습니다.</p>
+    </div>
+    <div class="grid-3" data-features></div>
+  </div>
+</section>
+
+<!-- ── 이미지 갤러리 ────────────────────────────────────────────────── -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head sec-head--center reveal">
+      <span class="eyebrow">GALLERY</span>
+      <h2 class="sec-title">실제 이용 화면</h2>
+      <p class="sec-sub">이미지를 누르면 크게 볼 수 있습니다.</p>
+    </div>
+    <div class="gallery" data-gallery></div>
+  </div>
+</section>
+
+<!-- ── 가격표 ───────────────────────────────────────────────────────── -->
+<section id="price">
+  <div class="wrap">
+    <div class="sec-head sec-head--center reveal">
+      <span class="eyebrow">PRICE</span>
+      <h2 class="sec-title">업계 최저가 <em>가격표</em></h2>
+      <p class="sec-sub">같은 상품, 더 싼 가격. 아래 버튼을 누르면 바로 디스코드 서버로 이동합니다.</p>
+    </div>
+    <div class="price-grid" data-pricing></div>
+    <p class="price-note" data-price-note></p>
+  </div>
+</section>
+
+<!-- ── 이용 가이드 ──────────────────────────────────────────────────── -->
+<section id="guide">
+  <div class="wrap">
+    <div class="sec-head sec-head--center reveal">
+      <span class="eyebrow">GUIDE</span>
+      <h2 class="sec-title">구매 · 이용 가이드</h2>
+      <p class="sec-sub">처음 오셨다면 아래 순서대로만 따라 하시면 됩니다.</p>
+    </div>
+    <div class="timeline" data-guide></div>
+  </div>
+</section>
+
+<!-- ── 공지사항 ─────────────────────────────────────────────────────── -->
+<section id="notice">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">NOTICE</span>
+      <h2 class="sec-title">공지사항</h2>
+      <p class="sec-sub">할인 · 이벤트 · 업데이트 소식입니다.</p>
+    </div>
+    <div class="notice-list" data-notices></div>
+  </div>
+</section>
+
+<!-- ── FAQ ──────────────────────────────────────────────────────────── -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head sec-head--center reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="sec-title">자주 묻는 질문</h2>
+      <p class="sec-sub">궁금한 점을 눌러 확인해 보세요.</p>
+    </div>
+    <div class="faq" data-faq style="max-width:840px;margin:0 auto"></div>
+  </div>
+</section>
+
+<!-- ── 마지막 CTA ───────────────────────────────────────────────────── -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="cta reveal">
+      <span class="eyebrow">JOIN NOW</span>
+      <h2>지금 바로 APEX HUB에 입장하세요</h2>
+      <p>업계 최저가로 가장 빠르게, 가장 안전하게 거래하세요.</p>
+      <div class="cta__actions">
+        <a class="btn btn--primary btn--lg" data-invite href="#">💬 디스코드 서버 입장하기</a>
+        <button class="btn btn--ghost btn--lg" type="button" data-copy-invite>🔗 초대 링크 복사</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 푸터 ─────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand">
+          <img data-brand-logo src="assets/images/logo.svg" alt="로고">
+          <span data-foot-name>APEX HUB</span>
+        </div>
+        <p class="footer__desc" data-foot-desc></p>
+        <p class="footer__desc" style="margin-top:10px">
+          운영자 : <span data-foot-owner></span> · 문의 : <span data-foot-contact></span>
+        </p>
+      </div>
+      <div class="footer__links" data-foot-links></div>
+    </div>
+    <div class="footer__bottom">
+      <span data-foot-copy></span>
+      <span>본 사이트는 <b>GitHub Pages</b>로 운영됩니다.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 맨 위로 -->
+<button id="toTop" type="button" aria-label="맨 위로">↑</button>
+
+<!-- 이미지 확대 -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" type="button" aria-label="닫기">✕</button>
+  <img src="" alt="확대 이미지">
+</div>
+
+<!-- 설정 파일 → 렌더링 스크립트 순서로 로드 (순서 중요!) -->
+<script src="config.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
