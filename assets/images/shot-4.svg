@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0b16"/><stop offset="100%" stop-color="#0a1218"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f7dfa5"/><stop offset="100%" stop-color="#34e5d4"/>
+    </linearGradient>
+    <pattern id="gr" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".045"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="600" fill="url(#b)"/>
+  <rect width="1200" height="600" fill="url(#gr)"/>
+  <circle cx="1000" cy="120" r="240" fill="#f0c274" fill-opacity=".13"/>
+
+  <g fill="url(#g)">
+    <text x="600" y="200" text-anchor="middle" font-family="Outfit, sans-serif" font-size="62" font-weight="900">★★★★★</text>
+  </g>
+  <text x="600" y="290" text-anchor="middle" font-family="Pretendard, sans-serif" font-size="38"
+        font-weight="800" fill="#f2f4fb">"이 가격에 이 속도라니 믿기지 않아요"</text>
+  <text x="600" y="348" text-anchor="middle" font-family="Pretendard, sans-serif" font-size="24"
+        font-weight="600" fill="#8b93ab">— 서버 멤버 후기</text>
+
+  <rect x="420" y="400" width="360" height="56" rx="28" fill="#ffffff" fill-opacity=".06" stroke="url(#g)" stroke-opacity=".5"/>
+  <text x="600" y="437" text-anchor="middle" font-family="Pretendard, sans-serif" font-size="21"
+        font-weight="700" fill="#c6cbdc">만족도 5.0 / 5.0</text>
+
+  <text x="600" y="560" text-anchor="middle" font-family="Pretendard, sans-serif" font-size="30" font-weight="800" fill="#c6cbdc">고객 후기 (이미지를 교체하세요)</text>
+</svg>

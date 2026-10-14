@@ -202,6 +202,41 @@
   <img src="" alt="확대 이미지">
 </div>
 
+<!-- ── 안전장치 : assets 폴더가 업로드되지 않았을 때 원인을 알려줌 ────── -->
+<script>
+(function () {
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      var box = document.querySelector("[data-pricing], [data-doc]");
+      if (box && box.children.length > 0) return;          /* 정상 동작 중 */
+      if (document.getElementById("loadError")) return;
+
+      var d = document.createElement("div");
+      d.id = "loadError";
+      d.style.cssText = "position:fixed;inset:0;z-index:99999;display:grid;place-items:center;" +
+        "padding:24px;background:rgba(4,5,10,.97);font-family:Pretendard,system-ui,sans-serif;text-align:center";
+      d.innerHTML =
+        '<div style="max-width:580px;padding:38px 30px;border-radius:22px;' +
+        'border:1px solid rgba(255,120,120,.55);background:#140a0a;color:#fff">' +
+        '<div style="font-size:46px;margin-bottom:14px">&#9888;&#65039;</div>' +
+        '<h2 style="font-size:21px;font-weight:900;margin-bottom:14px;color:#fff">' +
+        '사이트 파일이 일부 누락되었습니다</h2>' +
+        '<p style="font-size:14px;line-height:1.9;color:#ffd9d9">' +
+        '<b style="color:#fff">assets</b> 폴더 ( css &middot; js &middot; images ) 가 ' +
+        'GitHub 에 업로드되지 않았습니다.<br>이 폴더가 없으면 <b style="color:#fff">디자인과 가격표가 표시되지 않습니다.</b>' +
+        '</p>' +
+        '<p style="margin-top:20px;font-size:13px;line-height:1.9;color:#c9b0b0">' +
+        'GitHub 저장소 &rarr; <b style="color:#fff">Add file</b> &rarr; <b style="color:#fff">Upload files</b> ' +
+        '로 들어가 <b style="color:#fff">assets 폴더를 통째로</b> 끌어다 놓으세요.<br>' +
+        '(파일 선택 버튼으로는 폴더가 안 올라갑니다 &mdash; 반드시 <b style="color:#fff">드래그</b>하세요)' +
+        '</p>' +
+        '</div>';
+      document.body.appendChild(d);
+    }, 1500);
+  });
+})();
+</script>
+
 <!-- 설정 파일 → 렌더링 스크립트 순서로 로드 (순서 중요!) -->
 <script src="config.js"></script>
 <script src="assets/js/app.js"></script>

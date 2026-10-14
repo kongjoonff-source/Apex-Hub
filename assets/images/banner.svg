@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0d1a"/>
+      <stop offset="55%" stop-color="#0a1024"/>
+      <stop offset="100%" stop-color="#07131a"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b6bff"/>
+      <stop offset="50%" stop-color="#4d7dff"/>
+      <stop offset="100%" stop-color="#34e5d4"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f7dfa5"/>
+      <stop offset="100%" stop-color="#c08f3f"/>
+    </linearGradient>
+    <radialGradient id="r1" cx="18%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#7c5cff" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r2" cx="88%" cy="100%" r="70%">
+      <stop offset="0%" stop-color="#34e5d4" stop-opacity=".40"/>
+      <stop offset="100%" stop-color="#34e5d4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <rect width="1200" height="420" fill="url(#grid)"/>
+  <rect width="1200" height="420" fill="url(#r1)"/>
+  <rect width="1200" height="420" fill="url(#r2)"/>
+
+  <g transform="translate(96, 108)">
+    <rect width="204" height="204" rx="46" fill="#06070e" stroke="url(#brand)" stroke-opacity=".6" stroke-width="3"/>
+    <path d="M102 40 L156 148 H128 L102 92 L76 148 H48 Z" fill="url(#brand)"/>
+    <rect x="78" y="126" width="48" height="9" rx="4.5" fill="url(#gold)"/>
+  </g>
+
+  <text x="350" y="196" font-family="Outfit, Pretendard, sans-serif" font-size="76" font-weight="900"
+        letter-spacing="2" fill="#f2f4fb">APEX <tspan fill="url(#gold)">HUB</tspan></text>
+  <text x="352" y="248" font-family="Pretendard, sans-serif" font-size="27" font-weight="600" fill="#c6cbdc">
+    각종 게임 재화 · 난코 대전장 · OTT 판매
+  </text>
+  <rect x="352" y="282" width="420" height="46" rx="23" fill="#ffffff" fill-opacity=".06" stroke="url(#brand)" stroke-opacity=".5"/>
+  <text x="376" y="313" font-family="Pretendard, sans-serif" font-size="21" font-weight="700" fill="#34e5d4">
+    업계 최저가 · 24시간 즉시 거래
+  </text>
+
+  <text x="1104" y="360" text-anchor="end" font-family="Outfit, Pretendard, sans-serif" font-size="18"
+        font-weight="600" letter-spacing="4" fill="#8b93ab">discord.gg/yJzXhMAETU</text>
+</svg>

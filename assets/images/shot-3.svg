@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080f1c"/><stop offset="100%" stop-color="#0c0a1c"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b6bff"/><stop offset="100%" stop-color="#34e5d4"/>
+    </linearGradient>
+    <pattern id="gr" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".045"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="600" fill="url(#b)"/>
+  <rect width="1200" height="600" fill="url(#gr)"/>
+  <circle cx="600" cy="300" r="300" fill="#7c5cff" fill-opacity=".14"/>
+
+  <text x="600" y="200" text-anchor="middle" font-family="Outfit, Pretendard, sans-serif" font-size="52"
+        font-weight="900" fill="url(#g)">EVENT</text>
+  <text x="600" y="272" text-anchor="middle" font-family="Pretendard, sans-serif" font-size="42"
+        font-weight="800" fill="#f2f4fb">무료 추첨 이벤트 진행 중</text>
+  <rect x="380" y="330" width="440" height="60" rx="30" fill="#ffffff" fill-opacity=".06" stroke="url(#g)" stroke-opacity=".6"/>
+  <text x="600" y="370" text-anchor="middle" font-family="Pretendard, sans-serif" font-size="24"
+        font-weight="700" fill="#34e5d4">매주 토요일 오후 9시</text>
+
+  <text x="600" y="560" text-anchor="middle" font-family="Pretendard, sans-serif" font-size="30" font-weight="800" fill="#c6cbdc">이벤트 진행 모습 (이미지를 교체하세요)</text>
+</svg>

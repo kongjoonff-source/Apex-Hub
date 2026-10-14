@@ -58,6 +58,13 @@
 
 </div>
 
+<!-- ── 기본 비밀번호 경고 (패널 상단에 고정) ─────────────────────────── -->
+<div class="alertbar" id="alertbar" hidden>
+  ⚠️ <b>기본 비밀번호(apex-2026)를 그대로 사용 중입니다.</b>
+  지금 바로 <a href="#" id="alertFix">비밀번호를 바꾸세요</a>.
+  <button class="alertbar__x" type="button" id="alertClose" aria-label="닫기">✕</button>
+</div>
+
 <!-- ── 저장 모달 ────────────────────────────────────────────────────── -->
 <div class="modal" id="modal">
   <div class="modal__box">
@@ -91,8 +98,12 @@
         <label class="fld"><span class="fld__label">파일 경로</span>
           <input type="text" id="ghPath" placeholder="config.js"></label>
       </div>
-      <label class="fld"><span class="fld__label">Personal Access Token (classic, repo 권한)</span>
-        <input type="password" id="ghToken" placeholder="ghp_..."></label>
+      <label class="fld"><span class="fld__label">GitHub 토큰 — <b>Fine-grained</b> 권장 (해당 저장소만 접근)</span>
+        <input type="password" id="ghToken" placeholder="github_pat_... 또는 ghp_..."></label>
+      <label class="chk" style="margin-bottom:14px">
+        <input type="checkbox" id="ghRemember" checked>
+        이 브라우저에 토큰 저장 (해제하면 브라우저를 닫을 때 자동 삭제)
+      </label>
       <label class="fld"><span class="fld__label">커밋 메시지</span>
         <input type="text" id="ghMsg" placeholder="관리자 패널에서 내용 수정"></label>
       <div class="savebox__row">
